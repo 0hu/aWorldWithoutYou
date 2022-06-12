@@ -1,43 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>A World Without You</title>
+</head>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  #canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 169, 217, .7) 0%, rgba(0, 169, 217, .5) 5%, rgba(0, 169, 217, .0) 70%);
+    /*background-color: grey;*/
+  }
+  #labelDiv {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 50vh;
+  }
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+</style>
+<body>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<div id="labelDiv">A World Without You</div>
+
+<canvas id="canvas"></canvas>
+
+<div id="root"></div>
+
+<script src="/main.js"></script>
+
+
+<script>
+  let canvas; let ctx; let w; let h; let snows; let
+          snows2;
+
+  function init() {
+    canvas = document.querySelector('#canvas');
+    ctx = canvas.getContext('2d');
+
+    resizeReset();
+    animationLoop();
+  }
+
+  function resizeReset() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+
+    snows = [];
+    for (let i = 0; i < 500; i++) {
+      snows.push(new Snow());
+    }
+    snows2 = [];
+    for (let i = 0; i < 500; i++) {
+      snows2.push(new Snow2());
+    }
+  }
+
+  function animationLoop() {
+    ctx.clearRect(0, 0, w, h);
+    drawScene();
+    requestAnimationFrame(animationLoop);
+  }
+
+  function drawScene() {
+    for (let i = 0; i < snows.length; i++) {
+      snows[i].update();
+      snows[i].draw();
+    }
+    for (let i = 0; i < snows2.length; i++) {
+      snows2[i].update();
+      snows2[i].draw();
+    }
+  }
+
+  function getRandomInt(min, max) {
+    return Math.round(Math.random() * (max - min)) + min;
+  }
+
+  class Snow {
+    constructor() {
+      this.reset();
+      this.rgb = '52, 235, 236';
+    }
+
+    reset() {
+      this.x = getRandomInt(0, w);
+      this.xc = ((this.x - (w / 2)) / (w / 2)) / 2;
+      this.y = getRandomInt(-(h * 0.3), h);
+      this.yc = getRandomInt(10, 15) / 10;
+      this.size = getRandomInt(10, 20) / 10;
+      this.a = getRandomInt(-10, 0) / 10;
+      this.ac = getRandomInt(3, 5) / 100;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${this.rgb}, ${this.a})`;
+      ctx.strokeStyle = `rgba(${this.rgb}, ${this.a})`;
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+    }
+
+    update() {
+      this.x += this.xc;
+      this.y += this.yc;
+      this.a += this.ac;
+      if (this.a > 2) {
+        this.ac *= -1;
+      } else if (this.a < 0 && this.ac < 0) {
+        this.reset();
+      }
+    }
+  }
+
+  class Snow2 {
+    constructor() {
+      this.reset();
+      this.rgb = '52, 235, 236';
+    }
+
+    reset() {
+      this.x = getRandomInt(0, w);
+      this.y = getRandomInt(0, h);
+      this.size = getRandomInt(0, 5) / 10;
+      this.a = getRandomInt(-10, 0) / 10;
+      this.ac = 0.01;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${this.rgb}, ${this.a})`;
+      ctx.strokeStyle = `rgba(${this.rgb}, ${this.a})`;
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+    }
+
+    update() {
+      this.y -= 0.1;
+      this.a += this.ac;
+      if (this.a > 1.5) {
+        this.ac *= -1;
+      } else if (this.a < 0 && this.ac < 0) {
+        this.reset();
+      }
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', init);
+  window.addEventListener('resize', resizeReset);
+
+
+</script>
+
+</body>
 </html>
