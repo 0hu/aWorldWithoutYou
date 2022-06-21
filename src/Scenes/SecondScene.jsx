@@ -1,9 +1,35 @@
+import '../scss/styles.css';
+
 function SecondScene() {
   return (
-    <div>
-      2nd.
-      짱구가 많이 아프기 시작했다. 짱구는 매사에 긍정적인 사람이라 장미한테 힘든티를 많이 안내고 괜찮아 질거라고 한다.
-      장미는 짱구가 아픈걸 알지만 다 알지는 못한채 자기 공부도 열심히 하며 산다.
+    <div className="second-scene">
+      <div>
+        She has been interested in Korean history and culture for over a decade.
+      </div>
+      <div>
+        I helped her learn Korean and she helped me improve my English.
+      </div>
+      <div>
+        We talked about diverse topics such as religions.
+      </div>
+      <div>
+        I am a Christian and she is a Muslim.
+      </div>
+      <div>
+        She taught me many things about Islam  that helped me understand Muslims.
+      </div>
+      <div>
+        I learnt that ISIS do not represent Muslims and that they do things that Islam forbiddens.
+      </div>
+      <div>
+        Despite our cultural and religious differences, we became close friends.
+      </div>
+      <div>
+        As long as there is respect and understanding, people can co-exist peacefully.
+      </div>
+      <div>
+        Humanity unites us and every person`s existence is meaningful.
+      </div>
     </div>
   );
 }

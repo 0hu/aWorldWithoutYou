@@ -1,9 +1,29 @@
+import '../scss/styles.css';
+
 function ThirdScene() {
   return (
-    <div>
-      3nd.
-      그러다가 짱구가 죽고나서.. 장미는 하염없이 기다리다 ... 짱구의 사망소식을 듣게 되고 장미는 슬픔에 빠지게 된다.
-      다른 베프의 죽음의 느낌에대해서 인터넷 검색요망 .
+    <div className="third-scene">
+      <div>
+        We talked daily for a couple of months.
+      </div>
+      <div>
+        In late 2020, her health deteriorated and we lost touch.
+      </div>
+      <div>
+        I really felt sad and anxious and I prayed that she is fine.
+      </div>
+      <div>
+        Time passed and I hoped that we would talk again.
+      </div>
+      <div>
+        One day, she sent me a message and she told me about what happened in her life.
+      </div>
+      <div>
+        She was still sick, but I was so happy to talk again after a long time.
+      </div>
+      <div>
+        Fortunately, she got better and we met.
+      </div>
     </div>
   );
 }

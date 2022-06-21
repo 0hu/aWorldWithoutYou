@@ -1,0 +1,120 @@
+@import 'reset.css';
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anek Malayalam", sans-serif;
+}
+
+.title {
+  height: 100vh;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 140vh;
+  background-image: linear-gradient(to right, #000000, #453f96);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.scene-box {
+  width: 70%;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.first-scene {
+  font-size: 60px;
+}
+.first-scene div {
+  margin-bottom: 40px;
+}
+
+.second-scene {
+  font-size: 60px;
+}
+.second-scene div {
+  margin-bottom: 40px;
+}
+
+.third-scene {
+  font-size: 60px;
+}
+.third-scene div {
+  margin-bottom: 40px;
+}
+
+.fourth-scene {
+  font-size: 60px;
+}
+.fourth-scene div {
+  margin-bottom: 40px;
+}
+
+.left-msg {
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+.right-msg {
+  text-align: right;
+  margin-bottom: 70px;
+}
+
+.fade-out-box {
+  display: inline-block;
+  padding: 10px;
+  animation: fadeout 6s;
+  animation-delay: 2s;
+  -moz-animation: fadeout 6s; /* Firefox */
+  -webkit-animation: fadeout 6s; /* Safari and Chrome */
+  -o-animation: fadeout 6s; /* Opera */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeout { /* Firefox */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeout { /* Opera */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

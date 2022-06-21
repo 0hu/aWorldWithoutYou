@@ -1,3 +1,5 @@
+import '../scss/styles.css';
+import Title from './Title';
 import FirstScene from './FirstScene';
 import SecondScene from './SecondScene';
 import ThirdScene from './ThirdScene';
@@ -5,12 +7,29 @@ import FourthScene from './FourthScene';
 
 function SceneContainer() {
   return (
-    <div>
-      <FirstScene />
-      <SecondScene />
-      <ThirdScene />
-      <FourthScene />
-    </div>
+    <>
+      <Title />
+      <div className="container">
+        <div className="scene-box">
+          <FirstScene />
+        </div>
+      </div>
+      <div className="container">
+        <div className="scene-box">
+          <SecondScene />
+        </div>
+      </div>
+      <div className="container">
+        <div className="scene-box">
+          <ThirdScene />
+        </div>
+      </div>
+      <div className="container">
+        <div className="scene-box">
+          <FourthScene />
+        </div>
+      </div>
+    </>
   );
 }
 

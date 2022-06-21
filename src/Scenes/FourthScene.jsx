@@ -1,8 +1,20 @@
+import '../scss/styles.css';
+
 function FourthScene() {
   return (
-    <div>
-      4nd.
-      있을 떄 아픔을 더 해아려주지 못하고 , 더 잘해주지못한 것에 슬퍼한다.
+    <div className="fourth-scene">
+      <div>
+        When I was not able to reach her, I imagined a world without her.
+      </div>
+      <div>
+        It was not the same as before.
+      </div>
+      <div>
+        We need to treasure people as long as they are with us
+      </div>
+      <div>
+        and show them that their existence is precious.
+      </div>
     </div>
   );
 }
