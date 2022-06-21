@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <div>
-        footer
+        footer.
       </div>
     </div>
 

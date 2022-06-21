@@ -4,6 +4,7 @@ import FirstScene from './FirstScene';
 import SecondScene from './SecondScene';
 import ThirdScene from './ThirdScene';
 import FourthScene from './FourthScene';
+import Footer from './Footer';
 
 function SceneContainer() {
   return (
@@ -29,6 +30,7 @@ function SceneContainer() {
           <FourthScene />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
