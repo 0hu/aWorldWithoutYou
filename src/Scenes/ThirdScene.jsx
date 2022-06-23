@@ -1,4 +1,5 @@
 import '../scss/styles.css';
+import { Link } from 'react-router-dom';
 
 function ThirdScene() {
   return (
@@ -19,6 +20,7 @@ function ThirdScene() {
       <div>
         One day, she sent me a message and she told me about what happened in her life.
       </div>
+      <Link to="/letter">가즈아</Link>
     </div>
   );
 }

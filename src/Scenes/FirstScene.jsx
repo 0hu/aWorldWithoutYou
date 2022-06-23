@@ -1,4 +1,5 @@
 import '../scss/styles.css';
+import { Link } from 'react-router-dom';
 
 function FirstScene() {
   return (
@@ -20,7 +21,9 @@ function FirstScene() {
       <div>
         I talked with  foreigners from various countries and I discovered new cultures.
       </div>
-      <img className="gif" src="https://media4.giphy.com/media/bpYvfwhuCnuiadr2Oy/giphy.gif" alt="언어연습" />
+      <div className="gif-container">
+        <img className="gif" src="https://media4.giphy.com/media/bpYvfwhuCnuiadr2Oy/giphy.gif" alt="언어연습" />
+      </div>
       <div>
         In August of that summer, I met a Tunisian girl.
       </div>
@@ -30,6 +33,7 @@ function FirstScene() {
       <div>
         This shows that the distance does not present an obstacle to establish a genuine friendship.
       </div>
+      <Link to="/secondscene">가즈아</Link>
     </div>
   );
 }

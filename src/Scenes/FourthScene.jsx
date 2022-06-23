@@ -1,9 +1,10 @@
 import '../scss/styles.css';
+import { Link } from 'react-router-dom';
 
 function FourthScene() {
   return (
     <div className="fourth-scene">
-      <div>
+      <div className="line anim-typewriter">
         She was still sick
       </div>
       <div>
@@ -24,6 +25,7 @@ function FourthScene() {
       <div>
         and show them that their existence is precious.
       </div>
+      <Link to="/title">가즈아</Link>
     </div>
   );
 }

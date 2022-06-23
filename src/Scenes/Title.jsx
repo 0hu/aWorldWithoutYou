@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Title() {
   return (
-    <>
-      <div className="title">
-        A World Without
-        <div className="fade-out-box">You</div>
-      </div>
-      <Link to="FirstScene">가즈아</Link>
-    </>
+    <div className="title">
+      A World Without
+      <div className="fade-out-box">You</div>
+      <Link to="/firstscene">가즈아</Link>
+    </div>
   );
 }
 

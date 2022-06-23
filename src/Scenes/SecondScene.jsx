@@ -1,4 +1,5 @@
 import '../scss/styles.css';
+import { Link } from 'react-router-dom';
 
 function SecondScene() {
   return (
@@ -30,6 +31,7 @@ function SecondScene() {
       <div>
         Humanity unites us and every person`s existence is meaningful.
       </div>
+      <Link to="/thirdscene">가즈아</Link>
     </div>
   );
 }

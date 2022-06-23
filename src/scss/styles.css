@@ -47,6 +47,10 @@ body {
   margin-bottom: 40px;
 }
 
+.gif-container {
+  text-align: center;
+}
+
 .second-scene {
   font-size: 60px;
 }
@@ -62,6 +66,7 @@ body {
 }
 
 .fourth-scene {
+  margin-top: 100px;
   font-size: 60px;
 }
 .fourth-scene div {
@@ -153,10 +158,6 @@ body {
   justify-content: center;
   color: #fff;
   scroll-snap-type: y mandatory;
-}
-
-.letter {
-  font-size: 3em;
 }
 
 /*# sourceMappingURL=styles.css.map */

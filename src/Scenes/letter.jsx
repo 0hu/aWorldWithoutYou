@@ -1,8 +1,12 @@
 import '../scss/letter.css';
+import { Link } from 'react-router-dom';
 
 function Letter() {
   return (
-    <>
+    <div className="letter">
+      <div className="line anim-typewriter">
+        무언가 적는곳
+      </div>
       <div className="left-letter">
         <div data-aos="fade-left">Hi😊</div>
       </div>
@@ -36,7 +40,8 @@ function Letter() {
       <div className="right-letter">
         <div data-aos="fade-right">haha same</div>
       </div>
-    </>
+      <Link to="/fourthscene">가즈아</Link>
+    </div>
   );
 }
 
