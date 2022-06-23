@@ -25,7 +25,11 @@ function SceneContainer() {
           <ThirdScene />
         </div>
       </div>
-      <Letter />
+      <div className="letter-container">
+        <div className="letter">
+          <Letter />
+        </div>
+      </div>
       <div className="container">
         <div className="scene-box">
           <FourthScene />
