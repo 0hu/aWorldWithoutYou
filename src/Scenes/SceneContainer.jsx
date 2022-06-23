@@ -3,8 +3,8 @@ import Title from './Title';
 import FirstScene from './FirstScene';
 import SecondScene from './SecondScene';
 import ThirdScene from './ThirdScene';
+import Letter from './letter';
 import FourthScene from './FourthScene';
-import Footer from './Footer';
 
 function SceneContainer() {
   return (
@@ -25,12 +25,12 @@ function SceneContainer() {
           <ThirdScene />
         </div>
       </div>
+      <Letter />
       <div className="container">
         <div className="scene-box">
           <FourthScene />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

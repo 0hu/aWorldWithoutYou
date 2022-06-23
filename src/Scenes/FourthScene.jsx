@@ -4,6 +4,15 @@ function FourthScene() {
   return (
     <div className="fourth-scene">
       <div>
+        She was still sick
+      </div>
+      <div>
+        But I was so happy to talk again after a long time.
+      </div>
+      <div>
+        Fortunately, she got better and we met.
+      </div>
+      <div>
         When I was not able to reach her, I imagined a world without her.
       </div>
       <div>

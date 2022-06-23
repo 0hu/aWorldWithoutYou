@@ -15,14 +15,9 @@ function ThirdScene() {
       <div>
         Time passed and I hoped that we would talk again.
       </div>
+      <img className="walk-alone" src="https://24.media.tumblr.com/9a88cc2b7e9262bcaa1969c4cce869f8/tumblr_n69xa9z5x61skdwxio1_500.gif" alt="쓸쓸히걸어가는모습" />
       <div>
         One day, she sent me a message and she told me about what happened in her life.
-      </div>
-      <div>
-        She was still sick, but I was so happy to talk again after a long time.
-      </div>
-      <div>
-        Fortunately, she got better and we met.
       </div>
     </div>
   );
