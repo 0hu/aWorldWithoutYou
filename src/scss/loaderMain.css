@@ -1,0 +1,67 @@
+body {
+  background: #f0eff1;
+}
+
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.loader .loader-inner .image-block {
+  position: absolute;
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .loader-inner .image-block.image-1 {
+  width: 50em;
+  left: 30%;
+  bottom: 50%;
+}
+@media (max-width: 480px) {
+  .loader .loader-inner .image-block.image-1 {
+    left: 20%;
+    bottom: 40%;
+  }
+}
+.loader .loader-inner .image-block.image-3 {
+  width: 18em;
+  right: 12%;
+  top: 8%;
+}
+@media (max-width: 480px) {
+  .loader .loader-inner .image-block.image-3 {
+    top: 16%;
+    right: 4%;
+  }
+}
+.loader .loader-inner .image-block.image-4 {
+  max-width: 23em;
+  width: 40%;
+  right: 20%;
+  bottom: 10%;
+}
+@media (max-width: 480px) {
+  .loader .loader-inner .image-block.image-4 {
+    right: 6%;
+    bottom: 32%;
+  }
+}
+.loader .loader-inner .image-block.image-5 {
+  width: 10em;
+  left: 14%;
+  top: 12%;
+}
+@media (max-width: 480px) {
+  .loader .loader-inner .image-block.image-5 {
+    left: 6%;
+    top: 18%;
+  }
+}
+.loader .loader-inner .image-block img {
+  width: 100%;
+  object-fit: scale-down;
+}
+
+/*# sourceMappingURL=loaderMain.css.map */
