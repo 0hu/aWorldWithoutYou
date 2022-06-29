@@ -2,7 +2,7 @@ import '../scss/styles.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-function ThirdScene() {
+function EighthScene() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -14,15 +14,9 @@ function ThirdScene() {
         <div className="scene-box">
           <div className="third-scene">
             <div>
-              She has been interested in Korean history and culture for over a decade.
+              소중한 사람이 있다면 통화나 메시지를 한 번 보내보세요.
             </div>
-            <div>
-              I helped her learn Korean and she helped me improve my English.
-            </div>
-            <div>
-              We talked about diverse topics such as religions.
-            </div>
-            <Link to="/fourthscene">가즈아</Link>
+            <Link to="/">가즈아</Link>
           </div>
         </div>
       </div>
@@ -30,4 +24,4 @@ function ThirdScene() {
   );
 }
 
-export default ThirdScene;
+export default EighthScene;

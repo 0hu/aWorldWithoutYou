@@ -15,9 +15,9 @@ body.loading {
   justify-content: center;
 }
 .loader .loader-inner .image-block.image-1 {
-  width: 50em;
-  left: 30%;
-  bottom: 50%;
+  width: 40em;
+  left: 18%;
+  bottom: 40%;
 }
 @media (max-width: 480px) {
   .loader .loader-inner .image-block.image-1 {
@@ -57,6 +57,17 @@ body.loading {
   .loader .loader-inner .image-block.image-5 {
     left: 6%;
     top: 18%;
+  }
+}
+.loader .loader-inner .image-block.image-6 {
+  width: 40em;
+  left: 18%;
+  bottom: 40%;
+}
+@media (max-width: 480px) {
+  .loader .loader-inner .image-block.image-6 {
+    left: 20%;
+    bottom: 40%;
   }
 }
 .loader .loader-inner .image-block img {

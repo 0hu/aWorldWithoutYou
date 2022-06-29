@@ -19,14 +19,12 @@ body {
 
 .container {
   width: 100%;
-  height: 140vh;
-  background-image: linear-gradient(to right, #000000, #453f96);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  scroll-snap-type: y mandatory;
+  background-color: #FFE6E6;
 }
 
 .scene-box {
@@ -38,7 +36,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  scroll-snap-align: start;
 }
 
 .first-scene {

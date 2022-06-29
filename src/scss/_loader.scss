@@ -12,9 +12,9 @@ body.loading {
       align-items: center;
       justify-content: center;
       &.image-1 {
-        width: 50em;
-        left: 30%;
-        bottom: 50%;
+        width: 40em;
+        left: 18%;
+        bottom: 40%;
         @media (max-width: $layout-breakpoint-xsmall) {
           left: 20%;
           bottom: 40%;
@@ -46,6 +46,15 @@ body.loading {
         @media (max-width: $layout-breakpoint-xsmall) {
           left: 6%;
           top: 18%;
+        }
+      }
+      &.image-6 {
+        width: 40em;
+        left: 18%;
+        bottom: 40%;
+        @media (max-width: $layout-breakpoint-xsmall) {
+          left: 20%;
+          bottom: 40%;
         }
       }
       img {

@@ -9,6 +9,9 @@ import ThirdScene from './Scenes/ThirdScene';
 import FourthScene from './Scenes/FourthScene';
 import Letter from './Scenes/letter';
 import FifthScene from './Scenes/FifthScene';
+import SixthScene from './Scenes/SixthScene';
+import SeventhScene from './Scenes/SeventhScene';
+import EighthScene from './Scenes/EighthScene';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/letter" element={<Letter />} />
           <Route path="/fourthscene" element={<FourthScene />} />
           <Route path="/fifthscene" element={<FifthScene />} />
+          <Route path="/sixthscene" element={<SixthScene />} />
+          <Route path="/seventhscene" element={<SeventhScene />} />
+          <Route path="/eighthscene" element={<EighthScene />} />
         </Routes>
       </AnimatePresence>
     </DndProvider>
