@@ -1,4 +1,5 @@
 {
+  "homepage": "http://0hu.github.io/CodeSoom-Project/aWorldWithoutYou",
   "name": "aworldwithoutyou",
   "version": "0.1.0",
   "private": true,
@@ -34,7 +35,9 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,9 +61,10 @@
     "@babel/cli": "^7.17.10",
     "@babel/preset-env": "^7.18.2",
     "@emotion/babel-plugin": "^11.9.2",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "jest": "^28.1.1",
     "node-sass": "^7.0.1"
-  }
+  },
 }
