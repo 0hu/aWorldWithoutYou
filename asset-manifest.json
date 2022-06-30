@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CodeSoom-Project/aWorldWithoutYou/static/css/main.ec36b36b.css",
-    "main.js": "/CodeSoom-Project/aWorldWithoutYou/static/js/main.c3a5b3b0.js",
-    "index.html": "/CodeSoom-Project/aWorldWithoutYou/index.html",
-    "main.ec36b36b.css.map": "/CodeSoom-Project/aWorldWithoutYou/static/css/main.ec36b36b.css.map",
-    "main.c3a5b3b0.js.map": "/CodeSoom-Project/aWorldWithoutYou/static/js/main.c3a5b3b0.js.map"
+    "main.css": "/static/css/main.d957d8d0.css",
+    "main.js": "/static/js/main.47346731.js",
+    "index.html": "/index.html",
+    "main.d957d8d0.css.map": "/static/css/main.d957d8d0.css.map",
+    "main.47346731.js.map": "/static/js/main.47346731.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec36b36b.css",
-    "static/js/main.c3a5b3b0.js"
+    "static/css/main.d957d8d0.css",
+    "static/js/main.47346731.js"
   ]
 }
