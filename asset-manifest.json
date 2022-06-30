@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CodeSoom-Project/aWorldWithoutYou/static/css/main.ec36b36b.css",
+    "main.js": "/CodeSoom-Project/aWorldWithoutYou/static/js/main.c3a5b3b0.js",
+    "index.html": "/CodeSoom-Project/aWorldWithoutYou/index.html",
+    "main.ec36b36b.css.map": "/CodeSoom-Project/aWorldWithoutYou/static/css/main.ec36b36b.css.map",
+    "main.c3a5b3b0.js.map": "/CodeSoom-Project/aWorldWithoutYou/static/js/main.c3a5b3b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec36b36b.css",
+    "static/js/main.c3a5b3b0.js"
+  ]
+}
