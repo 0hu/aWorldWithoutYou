@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -25,7 +25,9 @@ function FifthScene() {
             <div>
               We talked daily for a couple of months.
             </div>
-            <Link to="/sixthscene">가즈아</Link>
+            <div className="center">
+              <Link to="/sixthscene" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
+            </div>
           </div>
         </div>
       </div>

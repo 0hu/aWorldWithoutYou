@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -24,7 +24,9 @@ function SecondScene() {
               This shows that the distance does not present an obstacle
               to establish a genuine friendship.
             </div>
-            <Link to="/thirdscene">가즈아</Link>
+            <div className="center">
+              <Link to="/thirdscene" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -11,9 +11,11 @@ function Title() {
       transition={{ duration: 1.5 }}
     >
       <div className="title">
-        A World Without
-        <div className="fade-out-box">You</div>
-        <Link to="/firstscene">가즈아</Link>
+        <div>
+          A World Without
+          <div className="fade-out-box">You</div>
+        </div>
+        <Link to="/firstscene" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
       </div>
     </motion.div>
   );

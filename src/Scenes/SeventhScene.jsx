@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -34,7 +34,9 @@ function SeventhScene() {
             <div>
               and show them that their existence is precious.
             </div>
-            <Link to="/eighthscene">가즈아</Link>
+            <div className="center">
+              <Link to="/eighthscene" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
+            </div>
           </div>
         </div>
       </div>

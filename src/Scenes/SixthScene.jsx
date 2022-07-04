@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -26,7 +26,9 @@ function SixthScene() {
               One day, she sent me a message and she told me about what happened in her life.
             </div>
             <img className="walk-alone" src="https://24.media.tumblr.com/9a88cc2b7e9262bcaa1969c4cce869f8/tumblr_n69xa9z5x61skdwxio1_500.gif" alt="쓸쓸히걸어가는모습" />
-            <Link to="/letter">가즈아</Link>
+            <div className="center">
+              <Link to="/letter" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
+            </div>
           </div>
         </div>
       </div>

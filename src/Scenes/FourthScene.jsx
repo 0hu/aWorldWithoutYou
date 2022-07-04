@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -23,7 +23,9 @@ function FourthScene() {
               I learnt that ISIS do not represent Muslims and that they do things
               that Islam forbiddens.
             </div>
-            <Link to="/fifthscene">가즈아</Link>
+            <div className="center">
+              <Link to="/fifthscene" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
+            </div>
           </div>
         </div>
       </div>

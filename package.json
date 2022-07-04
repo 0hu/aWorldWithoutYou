@@ -1,5 +1,4 @@
 {
-  "homepage": "http://0hu.github.io/CodeSoom-Project/aWorldWithoutYou",
   "name": "aworldwithoutyou",
   "version": "0.1.0",
   "private": true,
@@ -35,9 +34,7 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "dev": "gulp dev",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo huhu.works > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -66,5 +63,5 @@
     "gulp-sass": "^5.1.0",
     "jest": "^28.1.1",
     "node-sass": "^7.0.1"
-  },
+  }
 }
