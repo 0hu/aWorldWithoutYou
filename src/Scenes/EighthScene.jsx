@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -16,7 +16,9 @@ function EighthScene() {
             <div>
               소중한 사람이 있다면 통화나 메시지를 한 번 보내보세요.
             </div>
-            <Link to="/">가즈아</Link>
+          </div>
+          <div className="center">
+            <Link to="/" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
           </div>
         </div>
       </div>

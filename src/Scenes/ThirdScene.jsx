@@ -1,4 +1,4 @@
-import '../scss/styles.css';
+import '../scss/styles.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -22,7 +22,9 @@ function ThirdScene() {
             <div>
               We talked about diverse topics such as religions.
             </div>
-            <Link to="/fourthscene">가즈아</Link>
+            <div className="center">
+              <Link to="/fourthscene" className="next-page-button">&nbsp;&#8250;&nbsp;</Link>
+            </div>
           </div>
         </div>
       </div>
